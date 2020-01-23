@@ -3002,6 +3002,11 @@ input, select, textarea {
 		body.is-ie .spotlights > section {
 			min-height: 0;
 		}
+		
+		.spotlights > section > .image.round {
+			border-radius: 50%;
+			display: block;
+		}
 
 		.spotlights > section > .image {
 			background-position: center center;
@@ -3011,7 +3016,7 @@ input, select, textarea {
 			position: relative;
 			width: 25em;
 		}
-
+			
 			.spotlights > section > .image img {
 				border-radius: 0;
 				display: block;
@@ -3022,7 +3027,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(33, 54, 34, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3874,7 +3879,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/intro.svg");
+		background-image: url("images/intro_overlay.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
