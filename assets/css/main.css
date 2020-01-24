@@ -3002,11 +3002,6 @@ input, select, textarea {
 		body.is-ie .spotlights > section {
 			min-height: 0;
 		}
-		
-		.spotlights > section > .image.round {
-			border-radius: 50%;
-			display: block;
-		}
 
 		.spotlights > section > .image {
 			background-position: center center;
@@ -3027,7 +3022,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(33, 54, 34, 0.9);
+				background: rgba(58, 128, 29, 0.99);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3076,8 +3071,8 @@ input, select, textarea {
 			background-color: rgba(0, 0, 0, 0.1);
 		}
 
-		.spotlights > section.inactive > .image:before,
-		body.is-preload .spotlights > section > .image:before {
+		.spotlights > section.inactive > .image.fadein:before,
+		body.is-preload .spotlights > section > .image.fadein:before {
 			opacity: 1;
 		}
 
