@@ -3106,26 +3106,27 @@ input, select, textarea {
 			.spotlights > section {
 				display: block;
 			}
+			
+			.inner > .spotlights > section > .image,
+			.spotlights > section > .image {
+				background-position: center center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 50vh;
+			}
 
-				.spotlights > section > .image {
-					background-position: center center;
-					background-size: contain;
-					background-repeat: no-repeat;
-					width: 100%;
-					height: 50vh;
-				}
+			.spotlights > section > .content {
+				width: 100%;
+			}
 
-				.spotlights > section > .content {
-					width: 100%;
-				}
-
-				.spotlights > section.inactive > .content > .inner,
-				body.is-preload .spotlights > section > .content > .inner {
-					-moz-transform: translateY(1em);
-					-webkit-transform: translateY(1em);
-					-ms-transform: translateY(1em);
-					transform: translateY(1em);
-				}
+			.spotlights > section.inactive > .content > .inner,
+			body.is-preload .spotlights > section > .content > .inner {
+				-moz-transform: translateY(1em);
+				-webkit-transform: translateY(1em);
+				-ms-transform: translateY(1em);
+				transform: translateY(1em);
+			}
 
 		}
 
