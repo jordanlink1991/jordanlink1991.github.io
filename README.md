@@ -1,2 +1,1 @@
-# jordanlink1991.github.io
-Linkrulz Software Website
+www.linkrulzsoftware.com
