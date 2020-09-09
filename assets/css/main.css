@@ -100,17 +100,21 @@ input, select, textarea {
 	body {
 		background: #213622;
 	}
+	
+	body.BarBack {
+		background: #2B2B2B;
+	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			-moz-animation: none !important;
-			-webkit-animation: none !important;
-			-ms-animation: none !important;
-			animation: none !important;
-			-moz-transition: none !important;
-			-webkit-transition: none !important;
-			-ms-transition: none !important;
-			transition: none !important;
-		}
+	body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+		-moz-animation: none !important;
+		-webkit-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		transition: none !important;
+	}
 
 /* Type */
 
@@ -196,7 +200,7 @@ input, select, textarea {
 			padding-bottom: 0.35em;
 		}
 
-			h1.major:after {
+			h1.major:after, h1.major.BarBack:after {
 				background-image: -moz-linear-gradient(to right, #1F4C17, #3D871F);
 				background-image: -webkit-linear-gradient(to right, #1F4C17, #3D871F);
 				background-image: -ms-linear-gradient(to right, #1F4C17, #3D871F);
@@ -212,6 +216,13 @@ input, select, textarea {
 				position: absolute;
 				right: 0;
 				width: 100%;
+			}
+			
+			h1.major.BarBack:after {
+				background-image: -moz-linear-gradient(to right, #FFFFFF, #FFFFFF);
+				background-image: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);
+				background-image: -ms-linear-gradient(to right, #FFFFFF, #FFFFFF);
+				background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
 			}
 
 	h2 {
@@ -2613,6 +2624,12 @@ input, select, textarea {
 				width: 100%;
 			}
 
+		.image.small {
+			margin: 0 0 0 0;
+			width: 5em;
+			height: 5em;
+		}
+
 /* List */
 
 	ol {
@@ -2808,6 +2825,14 @@ input, select, textarea {
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
+	}
+	
+	ul.icons.centered {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;		
+		width: 90%;
+		margin: auto;
 	}
 
 		ul.icons li {
@@ -3040,6 +3065,10 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 			}
+			
+			.spotlights.BarBack > section > .image:before {
+				background: rgba(43, 43, 43, 0.99);
+			}
 
 		.spotlights > section > .content {
 			padding: 4em 5em 2em 5em ;
@@ -3076,7 +3105,27 @@ input, select, textarea {
 		}
 
 		.spotlights > section:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.1);
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+
+		.spotlights > section:nth-child(4) {
+			background-color: rgba(0, 0, 0, 0.2);
+		}
+
+		.spotlights > section:nth-child(5) {
+			background-color: rgba(0, 0, 0, 0.25);
+		}
+
+		.spotlights > section:nth-child(6) {
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+
+		.spotlights > section:nth-child(7) {
+			background-color: rgba(0, 0, 0, 0.3.5);
+		}
+
+		.spotlights > section:nth-child(8) {
+			background-color: rgba(0, 0, 0, 0.4);
 		}
 
 		.spotlights > section.inactive > .image.fadein:before,
@@ -3386,6 +3435,10 @@ input, select, textarea {
 		cursor: default;
 		padding: 1.75em 2em;
 	}
+	
+		#header.BarBack {
+			background-color: #262626;			
+		}
 
 		#header > .title {
 			border: 0;
